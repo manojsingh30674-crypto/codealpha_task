@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">ShopEase</h1>
+            <div class="cart-icon-container" id="cartToggle">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Product Grid Display -->
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sidebar Shopping Cart -->
+        <aside class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-btn" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Injected via JavaScript -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="alert('Checkout integration coming soon!')">Proceed to Checkout</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
